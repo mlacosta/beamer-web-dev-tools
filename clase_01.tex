@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \usetheme{Copenhagen}
-
+\usepackage[utf8]{inputenc}
 
 \title{Tutorial VS Code, bash y github}
 \author{\texorpdfstring{Author\newline\url{www.github.com/mlacosta}}{Author}}
@@ -63,6 +63,7 @@
 		\begin{column}{.6\textwidth}
 			
 			\begin{itemize}
+				\item Creado por Linus Torvalds en 2005 (Linux)
 				\item Registros de todos los cambios en el código (undoing)
 				\item Colaboración con múltiples desarrolladores (branching)
 				\item Prototipado/Desarrollo de prestaciones (features)
@@ -88,13 +89,14 @@
 		\begin{column}{.45\textwidth}
 			\includegraphics[scale=.12]{img/github.jpeg}
 		\end{column}
-		\begin{column}{.55\textwidth}
+		\begin{column}{.6\textwidth}
 			
 			\begin{itemize}
-				\item Emulación de la linea de comandos de UNIX
-				\item Amigable para principiantes y expertos
-				\item Automatización de tareas repetitivas (scripts)
-				\item Soporte de la comunidad (recursos disponibles)
+				\item Servicio para almacenar/compartir proyectos
+				\item Creación de 'repositorios' (o repos)
+				\item Permite 'Social Networking'
+				\item Es gratis (para uso personal)
+				\item Existen otras alternativas (Bitbucket, SourceForge, etc...)
 			\end{itemize}
 		\end{column}
 	\end{columns}
@@ -103,6 +105,164 @@
 
 
 \section{Comandos de Consola (Bash)}
+
+
+\begin{frame}
+	
+	\textbf{Comandos}
+	\begin{block}{\textbf{Cambiar Directorio cd}}
+		Moverse en el sistema de archivos. 
+		Sus parámetros pueden ser un directorio, subdirectorio o directorio padre\\
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/cd.JPG}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos}
+	\begin{block}{\textbf{Crear Directorio mkdir}}
+		Crear directorio de acuerdo a su argumento. Puede darse un path o un nombre.
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/mkdir.JPG}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+
+	\textbf{Comandos}
+	\begin{block}{\textbf{Crear archivo touch}}
+		Crea un nuevo archivo bajo el directorio con el nombre y extensión provistas
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/touch.JPG}
+	\end{center}
+
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos}
+	\begin{block}{\textbf{List ls}}
+		Mostrar los contenidos del directorio
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/ls.JPG}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos}
+	\begin{block}{\textbf{ls opciones}}
+				\begin{itemize}
+			\item ls -a: mostrar archivos ocultos
+			\item ls -l: mostrar formato largo
+			\item ls -t: mostrar fecha de modificación
+		\end{itemize}
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/ls2.JPG}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos}
+	\begin{block}{\textbf{Copiar cp}}
+		Copiar archivos o directorios. \\ 
+		La estructura básica es \$ cp [fuente] [destino]
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/cp.JPG}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos}
+	\begin{block}{\textbf{Mover mv}}
+		Mover archivos dentro de directorios. \\ 
+		La estructura básica es \$ mv [nombre\_archivo] [destino]
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/mv.JPG}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos}
+	\begin{block}{\textbf{Borrar rm}}
+		Eliminar archivos y/o directorios. \\ 
+		El flag -r remueve directorios y todo su contenido\\
+		La estructura básica es \$ rm -r [nombre\_recurso] 
+	\end{block}	
+	\begin{center}
+		\includegraphics[scale=.6]{img/bash/rm.JPG}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos (Avanzados)}
+	\begin{block}{\hyperlink{https://mywiki.wooledge.org/BashGuide/InputAndOutput}{https://mywiki.wooledge.org/BashGuide/InputAndOutput}}
+		Redireccionar  \\
+		\vspace{0.3cm}
+		Mostrar contenido \\ 
+		\vspace{0.3cm}
+		Transferencia \\
+		\vspace{0.3cm}
+		Buscar \\
+	\end{block}	
+
+\end{frame}
+
+\begin{frame}
+	
+	\textbf{Comandos (Scripts)}
+	\begin{block}{https://devhints.io/bash}
+		- Automatizar tareas de programación, como crear directorios y archivos, búsqueda de datos, generar repositorios, etc...\\
+		\vspace{0.3cm}
+		- Creación de Aliases
+	\end{block}	
+	
+\end{frame}
+
+
+\section{Visual Code Studio}
+	\begin{frame}
+		
+		\begin{block}{\textbf{Demostracion VS Code + Bash}}
+			- Creación de un sistema de archivos \\
+			\vspace{0.3cm}
+			- Comando 'code' \\
+			\vspace{0.3cm}
+			- Ejemplo de Aliases y Scripts \\
+			\vspace{0.3cm}
+			- Terminal Integrado \\
+			\vspace{0.3cm}
+			- Autocompletado de Código \\
+		\end{block}	
+		
+	\end{frame}
+
+	\begin{frame}
+		\textbf{Plugins - Extensiones para VS Code (Ctrl + shift + p)}
+		\begin{center}
+			\includegraphics[scale=.3]{img/extensions.png}
+		\end{center}
+
+	\end{frame}
 
 \section{Comandos de Git}
 
