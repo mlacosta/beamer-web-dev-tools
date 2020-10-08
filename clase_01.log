@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.20)  8 OCT 2020 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.20)  8 OCT 2020 15:30
 entering extended mode
 **./clase_01.tex
 (clase_01.tex
@@ -1214,7 +1214,7 @@ Package pdftex.def Info: img/logo.jpg  used on input line 78.
  [6
 
  <./img/branches.png>]
-<img/git_project.png, id=198, 826.08624pt x 465.74pt>
+<img/git_project.png, id=199, 826.08624pt x 465.74pt>
 File: img/git_project.png Graphic file (type png)
 <use img/git_project.png>
 Package pdftex.def Info: img/git_project.png  used on input line 84.
@@ -1226,6 +1226,23 @@ Package pdftex.def Info: img/logo.jpg  used on input line 84.
  [7
 
  <./img/git_project.png (PNG copy)>]
+<img/github.jpeg, id=227, 1284.8pt x 722.7pt>
+File: img/github.jpeg Graphic file (type jpg)
+<use img/github.jpeg>
+Package pdftex.def Info: img/github.jpeg  used on input line 102.
+(pdftex.def)             Requested size: 154.16934pt x 86.72025pt.
+
+Overfull \hbox (15.88985pt too wide) in paragraph at lines 102--102
+[][]  
+ []
+
+File: img/logo.jpg Graphic file (type jpg)
+<use img/logo.jpg>
+Package pdftex.def Info: img/logo.jpg  used on input line 102.
+(pdftex.def)             Requested size: 30.73085pt x 30.72997pt.
+[8
+
+ <./img/github.jpeg>]
 \tf@nav=\write6
 \openout6 = `clase_01.nav'.
 
@@ -1235,19 +1252,19 @@ Package pdftex.def Info: img/logo.jpg  used on input line 84.
 \tf@snm=\write8
 \openout8 = `clase_01.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
  (clase_01.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
 Package rerunfilecheck Info: File `clase_01.out' has not changed.
 (rerunfilecheck)             Checksum: E07961AC623FB84EA9B0CB38EAFDCA84;67.
  ) 
 Here is how much of TeX's memory you used:
- 27119 strings out of 492945
- 535934 string characters out of 3123586
+ 27129 strings out of 492945
+ 536061 string characters out of 3123586
  568932 words of memory out of 3000000
- 30573 multiletter control sequences out of 15000+200000
+ 30579 multiletter control sequences out of 15000+200000
  539088 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,20n,92p,798b,719s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1255,9 +1272,9 @@ Here is how much of TeX's memory you used:
 sfonts/cm/cmss10.pfb><C:/Users/Deep Marian/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Deep Marian/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on clase_01.pdf (7 pages, 516830 bytes).
+Output written on clase_01.pdf (8 pages, 559674 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 18 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
