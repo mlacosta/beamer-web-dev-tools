@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.20)  8 OCT 2020 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.5.20)  8 OCT 2020 15:10
 entering extended mode
 **./clase_01.tex
 (clase_01.tex
@@ -1123,7 +1123,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 {C:/Users/Deep Marian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (clas
 e_01.toc)
-<img/logo.jpg, id=43, 642.4pt x 642.4pt>
+<img/logo.jpg, id=52, 642.4pt x 642.4pt>
 File: img/logo.jpg Graphic file (type jpg)
 <use img/logo.jpg>
 Package pdftex.def Info: img/logo.jpg  used on input line 19.
@@ -1131,7 +1131,7 @@ Package pdftex.def Info: img/logo.jpg  used on input line 19.
  [2
 
  <./img/logo.jpg>]
-<img/vscode.png, id=71, 1083.04625pt x 813.0375pt>
+<img/vscode.png, id=80, 1083.04625pt x 813.0375pt>
 File: img/vscode.png Graphic file (type png)
 <use img/vscode.png>
 Package pdftex.def Info: img/vscode.png  used on input line 38.
@@ -1168,23 +1168,64 @@ Package pdftex.def Info: img/logo.jpg  used on input line 38.
  [3
 
  <./img/vscode.png>]
-<img/git_bash.png, id=101, 548.0475pt x 371.3875pt>
+<img/git_bash.png, id=112, 548.0475pt x 371.3875pt>
 File: img/git_bash.png Graphic file (type png)
 <use img/git_bash.png>
-Package pdftex.def Info: img/git_bash.png  used on input line 57.
+Package pdftex.def Info: img/git_bash.png  used on input line 56.
 (pdftex.def)             Requested size: 164.41551pt x 111.4171pt.
 
-Overfull \hbox (10.77058pt too wide) in paragraph at lines 57--57
+Overfull \hbox (10.77058pt too wide) in paragraph at lines 56--56
 [][]  
  []
 
 File: img/logo.jpg Graphic file (type jpg)
 <use img/logo.jpg>
-Package pdftex.def Info: img/logo.jpg  used on input line 57.
+Package pdftex.def Info: img/logo.jpg  used on input line 56.
 (pdftex.def)             Requested size: 30.73085pt x 30.72997pt.
 [4
 
  <./img/git_bash.png>]
+<img/git_logo.png, id=141, 1027.84pt x 429.605pt>
+File: img/git_logo.png Graphic file (type png)
+<use img/git_logo.png>
+Package pdftex.def Info: img/git_logo.png  used on input line 72.
+(pdftex.def)             Requested size: 102.79001pt x 42.96301pt.
+
+Overfull \hbox (10.60211pt too wide) in paragraph at lines 72--72
+[][]  
+ []
+
+File: img/logo.jpg Graphic file (type jpg)
+<use img/logo.jpg>
+Package pdftex.def Info: img/logo.jpg  used on input line 72.
+(pdftex.def)             Requested size: 30.73085pt x 30.72997pt.
+[5
+
+ <./img/git_logo.png>]
+<img/branches.png, id=170, 971.63pt x 497.86pt>
+File: img/branches.png Graphic file (type png)
+<use img/branches.png>
+Package pdftex.def Info: img/branches.png  used on input line 78.
+(pdftex.def)             Requested size: 291.49126pt x 149.35915pt.
+File: img/logo.jpg Graphic file (type jpg)
+<use img/logo.jpg>
+Package pdftex.def Info: img/logo.jpg  used on input line 78.
+(pdftex.def)             Requested size: 30.73085pt x 30.72997pt.
+ [6
+
+ <./img/branches.png>]
+<img/git_project.png, id=198, 826.08624pt x 465.74pt>
+File: img/git_project.png Graphic file (type png)
+<use img/git_project.png>
+Package pdftex.def Info: img/git_project.png  used on input line 84.
+(pdftex.def)             Requested size: 289.1345pt x 163.01143pt.
+File: img/logo.jpg Graphic file (type jpg)
+<use img/logo.jpg>
+Package pdftex.def Info: img/logo.jpg  used on input line 84.
+(pdftex.def)             Requested size: 30.73085pt x 30.72997pt.
+ [7
+
+ <./img/git_project.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `clase_01.nav'.
 
@@ -1194,29 +1235,29 @@ Package pdftex.def Info: img/logo.jpg  used on input line 57.
 \tf@snm=\write8
 \openout8 = `clase_01.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 87.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 87.
  (clase_01.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 87.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 87.
 Package rerunfilecheck Info: File `clase_01.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: E07961AC623FB84EA9B0CB38EAFDCA84;67.
  ) 
 Here is how much of TeX's memory you used:
- 27033 strings out of 492945
- 533902 string characters out of 3123586
- 567928 words of memory out of 3000000
- 30497 multiletter control sequences out of 15000+200000
+ 27119 strings out of 492945
+ 535934 string characters out of 3123586
+ 568932 words of memory out of 3000000
+ 30573 multiletter control sequences out of 15000+200000
  539088 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,15n,92p,798b,717s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 83i,20n,92p,798b,719s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Deep Marian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmss10.pfb><C:/Users/Deep Marian/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Deep Marian/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on clase_01.pdf (4 pages, 423744 bytes).
+Output written on clase_01.pdf (7 pages, 516830 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 243 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
