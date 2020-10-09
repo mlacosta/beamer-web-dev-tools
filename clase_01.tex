@@ -293,6 +293,36 @@
 
 \section{Comandos de Git}
 	\begin{frame}
+		\begin{center}
+			\includegraphics[scale=.3]{img/git_diagram.png}
+		\end{center}
+	\end{frame}
+	\begin{frame}
+	Se debe inicializar GIT en el directorio raiz del proyecto y procurar \textbf{NO} volver a hacerlo en ningún subdirectorio del mismo. 
+		\begin{block}{\textbf{Creación de un repositorio local}}
+			\$ git init\\
+			\vspace{0.3cm}
+			\$ git add nombre\_archivo ó \$ git add .\\
+			\vspace{0.3cm}
+			\$ git commit -m "mi primer commit" \\
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+
+	\begin{frame}
+	\textbf{DEMOSTRACIÓN}\\ Luego crean un Repo en github y lo sincronizan así:
+		\begin{block}{\textbf{Agregar repositorio remoto}}
+			\small \$ git remote add origin https://github.com/tu\_usuario/nombre\_repo.git\\
+			\vspace{0.3cm}
+			\small \$ git branch -M main\\
+			\vspace{0.3cm}
+			\small \$ git push -u origin main \\
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+
+
+	\begin{frame}
 		\textbf{La primera vez que quieran hacer un push a su cuenta con el CLI les van a pedir que ingresen usuario y contraseña} \\
 		\vspace{1cm}
 		\textbf{Formas de Autenticación}
@@ -302,4 +332,82 @@
 		\end{itemize}
 	\end{frame}
 
+	\begin{frame}
+		\textbf{DEMOSTRACIÓN} Cada vez que hagan cambios locales y quieran actualizar el repo:
+		\begin{block}{\textbf{Actualizar repositorio remoto}}
+			\small \$ git add . \\
+			\vspace{0.3cm}
+			\small \$ git commit -m "algun comentario relacionado"\\
+			\vspace{0.3cm}
+			\small \$ git push \\
+			\vspace{0.3cm}
+			\textbf{Alternativamente:}\\
+			\vspace{0.3cm}
+			\small \$ git commit -a -m "algun comentario relacionado"\\
+			\vspace{0.3cm}
+			\small \$ git push \\
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+
+	\begin{frame}
+		\textbf{DEMOSTRACIÓN} 
+		\begin{block}{\textbf{¿Qué pasa si modifiqué el repo en github y quiero bajar los cambios a mi PC?}}
+			\vspace{0.3cm}
+			\small \$ git fetch \\
+			\vspace{0.3cm}
+			\small \$ git merge origin/main\\
+			\vspace{0.3cm}
+			\textbf{Alternativamente:}\\
+			\vspace{0.3cm}
+			\small \$ git pull
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+
+	\begin{frame}
+		\textbf{DEMOSTRACIÓN} 
+		\begin{block}{\textbf{Más Comandos}}
+			\vspace{0.3cm}
+			 \$ git status   \small -Ver archivos modificados y sin trackear- \\
+			\vspace{0.3cm}
+			 \$ git log    \small -Ver historial de commits (apretar 'q' para salir)-\\
+			\vspace{0.3cm}
+		    \$ git diff nombre\_archivo    \small -Ver cambios en el código-\\
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+
+	\begin{frame}
+	\textbf{DEMOSTRACIÓN} 
+		\begin{block}{\textbf{Más Comandos}}
+			\vspace{0.3cm}
+			\small \$ git reset HEAD nombre\_archivo   \tiny -Remover todos los archivos del staging- \\
+			\vspace{0.3cm}
+			\small \$ git checkout -- nombre\_archivo \tiny -Revertir el estado de un archivo antes de cambiarlo-\\
+			\vspace{0.3cm}
+			\small \$ git rm -r nombre\_dir   \tiny -Eliminar archivo/directorio del disco y del repo local-\\
+			\vspace{0.3cm}
+			\small \$ git rm nombre\_archivo --cache   \tiny -Eliminar archivo \textbf{sólo} del repo local-\\
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+
+	\begin{frame}{.gitignore}
+		\textbf{DEMOSTRACIÓN} \\
+		\vspace{.5cm}
+		Muchas veces no es necesario o no queremos agregar archivos/carpetas a un repositorio, para ello nos servimos del archivo .gitignore
+	\end{frame}
+
+	\begin{frame}
+		\textbf{Para aprender más sobre GIT:} \\
+		\vspace{1cm}
+		\begin{center}
+			https://www.atlassian.com/git/tutorials
+		\end{center}
+
+	\end{frame}
+
+
 \end{document}
+

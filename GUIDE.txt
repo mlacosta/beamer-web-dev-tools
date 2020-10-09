@@ -1,0 +1,39 @@
+
+Básicamente hice una copia local de tu repositorio y tu aplicación funciona. También le agregaste un nombre a tu tienda, muy bien.
+
+Básicamente, hice una copia local de tu repositorio y tu aplicación funciona. Te recomiendo que le pongas un nombre más adecuado a tu tienda, ya que vas a trabajar sobre este proyecto por el resto de la cursada (ej: puede ser el nombre de tu negocio o uno ficticio) Para modificar el nombre de tu app tenés que cambiarle el nombre a la carpeta y modificar el campo "name" en el archivo package.json
+
+
+[Tutorial] VS Code | Git Bash | Github | Primer App React
+
+git bash tutorial, comandos basicos de consola
+crear archivos, directorios, etc | windows
+
+ls, pwd, start ., 
+
+[avanzado] script, mostrar webdir y dejar link(read more)
+
+alias
+
+comandos basicos de git, git branches, commit, push, clone, revert, add, status
+
+pull vs push
+
+fetch origin/master (cambios remotos)
+
+
+github tutorial crear cuenta | subir, clonar repositorios
+
+login primera vez bash
+
+
+
+tutorial VS Code + cómo instalar plugins + integracion con git bash
+
+demostracion de herramientas para crear react app
+
+
+dejar ejercicio al final.
+
+
+
