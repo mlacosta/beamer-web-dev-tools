@@ -152,7 +152,7 @@
 	
 	\textbf{Comandos}
 	\begin{block}{\textbf{Crear Directorio mkdir}}
-		Crear directorio de acuerdo a su argumento. Puede darse un path o un nombre.
+		Crear directorio de acuerdo a su argumento. Puede darse un path o un nombre. Usar flag -p para crear directorios anidados.
 	\end{block}	
 	\begin{center}
 		\includegraphics[scale=.6]{img/bash/mkdir.JPG}
@@ -293,6 +293,24 @@
 
 \section{Comandos de Git}
 	\begin{frame}
+		\textbf{Contenidos}\\
+		\vspace{.5cm}
+		\begin{itemize}
+			\item Crear y mantener repo local/remoto (básico)
+			\item Descargar repos
+			\item .gitignore
+			\item Manipulaciones básicas
+		\end{itemize}
+		\vspace{.5cm}
+		Si nos queda tiempo:
+		\vspace{.25cm} 
+		\begin{itemize}
+			\item Branching
+			\item Revertir Cambios
+		\end{itemize}
+		
+		\end{frame}
+	\begin{frame}
 		\begin{center}
 			\includegraphics[scale=.3]{img/git_diagram.png}
 		\end{center}
@@ -366,6 +384,17 @@
 	\end{frame}
 
 	\begin{frame}
+	\textbf{DEMOSTRACIÓN} 
+		\vspace{.5cm}
+		\begin{block}{\textbf{¿Cómo bajo un repositorio de Github a mi PC?}}
+			\vspace{0.3cm}
+			\small \$ git clone https://github.com/nombre\_usuario/nombre\_proyecto.git \\
+			\vspace{0.3cm}
+			\textbf{Nota:} Leer requerimientos del proyecto (ej: README), usualmente hay que bajar dependencias (React|Node)
+		\end{block}	
+	\end{frame}
+
+	\begin{frame}
 		\textbf{DEMOSTRACIÓN} 
 		\begin{block}{\textbf{Más Comandos}}
 			\vspace{0.3cm}
@@ -373,22 +402,9 @@
 			\vspace{0.3cm}
 			 \$ git log    \small -Ver historial de commits (apretar 'q' para salir)-\\
 			\vspace{0.3cm}
+			\$ git log --oneline   \small -Versión simple-\\
+			\vspace{0.3cm}
 		    \$ git diff nombre\_archivo    \small -Ver cambios en el código-\\
-			\vspace{0.3cm}
-		\end{block}	
-	\end{frame}
-
-	\begin{frame}
-	\textbf{DEMOSTRACIÓN} 
-		\begin{block}{\textbf{Más Comandos}}
-			\vspace{0.3cm}
-			\small \$ git reset HEAD nombre\_archivo   \tiny -Remover todos los archivos del staging- \\
-			\vspace{0.3cm}
-			\small \$ git checkout -- nombre\_archivo \tiny -Revertir el estado de un archivo antes de cambiarlo-\\
-			\vspace{0.3cm}
-			\small \$ git rm -r nombre\_dir   \tiny -Eliminar archivo/directorio del disco y del repo local-\\
-			\vspace{0.3cm}
-			\small \$ git rm nombre\_archivo --cache   \tiny -Eliminar archivo \textbf{sólo} del repo local-\\
 			\vspace{0.3cm}
 		\end{block}	
 	\end{frame}
@@ -398,6 +414,81 @@
 		\vspace{.5cm}
 		Muchas veces no es necesario o no queremos agregar archivos/carpetas a un repositorio, para ello nos servimos del archivo .gitignore
 	\end{frame}
+
+	\begin{frame}
+	\textbf{DEMOSTRACIÓN} 
+		\begin{block}{\textbf{Más Comandos}}
+			\vspace{0.3cm}
+			\small \$ git reset HEAD nombre\_archivo   \tiny -Remover todos los archivos del staging- \\
+			\vspace{0.3cm}
+			\small \$ git checkout -- nombre\_archivo \tiny -Revertir el estado de un archivo a antes de modificarlo-\\
+			\vspace{0.3cm}
+			\small \$ git rm -r nombre\_dir   \tiny -Eliminar archivo/directorio del disco y del repo local-\\
+			\vspace{0.3cm}
+			\small \$ git rm nombre\_archivo --cache   \tiny -Eliminar archivo \textbf{sólo} del repo local-\\
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+	
+	\begin{frame}{Branching}
+		\textbf{Recordemos}\\ \vspace{.4cm}
+		\includegraphics[scale=.35]{img/git_project.png}
+		
+	\end{frame}
+
+	\begin{frame}
+		\textbf{DEMOSTRACIÓN} 
+		\begin{block}{\textbf{Branching}}
+			\vspace{0.12cm}
+			\normalsize \textbf{\$ git branch}   \small -muestra todas las ramas del proyecto- \\
+			\vspace{0.12cm}
+			\normalsize \textbf{\$ git branch nombre}    \small -crea y cambia a la nueva rama (flag -d)-\\
+			\vspace{0.12cm}
+			\normalsize \textbf{\$ git branch -D }\small -eliminar rama (-d flag más seguro)-\\
+			\vspace{0.12cm}
+			\normalsize \textbf{\$ git branch -m nombre} \small -cambiar el nombre-\\
+			\vspace{0.1cm}
+			\normalsize \textbf{\$ git checkout nombre}     \small -switchear entre ramas (-b flag crea rama)-\\
+			\vspace{0.12cm}
+			\normalsize\textbf{\$ git merge nombre} \small -combinar la rama actual con la especificada-\\
+			\vspace{0.12cm}
+			\normalsize \textbf{\$ git push origin nombre} \small -subir rama al repositorio remoto-\\
+			\vspace{0.3cm}
+		\end{block}	
+	\end{frame}
+
+	\begin{frame}
+	\textbf{Revertir Cambios} \vspace{.5cm} 
+		\begin{block}{\textbf{Reset}}
+			Elimina un commit y todos los subsecuentes.
+		\end{block}	
+		\vspace{.5cm}
+		\begin{block}{\textbf{Revert}}
+			Cambia a cualquier commit previo del proyecto y crea un nuevo commit aplicando los cambios.
+		\end{block}	
+
+
+	\end{frame}
+
+	\begin{frame}
+		\textbf{DEMOSTRACIÓN} 
+		\begin{block}{\textbf{Revertir Cambios}}
+			\vspace{0.15cm}
+			\normalsize \textbf{\$ git log --oneline}   \small -ver hashes de todos los commits- \\
+			\vspace{0.15cm}
+			\normalsize \textbf{\$ git checkout [hash] }    \small -pasar a un commit previo (no los borra)-\\
+			\vspace{0.15cm}
+			\normalsize \textbf{\$ git reset --hard [hash] }\small -usar 'revert' para evitar errores con github -\\
+			\vspace{0.15cm}
+			\normalsize \textbf{\$ git revert [hash] ó HEAD }\small - HEAD vuelve al último commit -\\
+			\vspace{0.15cm}
+			\normalsize \textbf{\$ git branch nombre [hash]} \small -crear un branch de un commit previo-\\
+			\vspace{0.3cm}
+			
+		\end{block}	
+	\end{frame}
+
+
 
 	\begin{frame}
 		\textbf{Para aprender más sobre GIT:} \\
