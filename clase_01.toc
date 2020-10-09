@@ -1,3 +1,4 @@
 \beamer@sectionintoc {1}{Presentaci\IeC {\'o}n de Herramientas}{3}{0}{1}
 \beamer@sectionintoc {2}{Comandos de Consola (Bash)}{9}{0}{2}
 \beamer@sectionintoc {3}{Visual Code Studio}{19}{0}{3}
+\beamer@sectionintoc {4}{Comandos de Git}{21}{0}{4}
